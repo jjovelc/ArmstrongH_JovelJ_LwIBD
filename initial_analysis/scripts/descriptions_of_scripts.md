@@ -1,0 +1,19 @@
+# Descriptions of Scripts
+
+| Script Name | Description |
+|------------|-------------|
+| `alpha-beta_diversity_norm.R` | Conducts alpha and beta diversity analyses on normalized kraken2 taxonomic data across multiple taxonomic levels (Kingdom through Species). Generates diversity plots (Observed, Chao1, ACE, Shannon, Simpson, InvSimpson), PCoA plots with PERMANOVA/ANOSIM statistics, stacked bar plots, and performs pairwise statistical comparisons between experimental groups. |
+| `conduct_U-test.R` | Performs Wilcoxon/Mann-Whitney U-tests on assembly statistics data comparing two groups (captivity_E vs wild_I). Tests multiple assembly quality metrics and generates bar plots with error bars for significant metrics. |
+| `DESeq2_microbiome.R` | Conducts differential expression/abundance analysis using DESeq2 on microbiome count data. Generates exploratory plots (hierarchical clustering heatmaps, PCoA plots, volcano plots) and exports results with different significance thresholds to Excel and TSV files. |
+| `DESeq2_v2.R` | Performs comprehensive differential expression analysis using DESeq2 on shotgun metagenomics data with patient-matched longitudinal design. Includes multiple subset analyses for different disease progression patterns (remission-flare transitions across different timepoints). Accounts for patient effects in the statistical model. |
+| `extract_difference_52-0.py` | Extracts the difference between week 52 and week 0 samples from count data. Creates a difference table where each sample's values represent the change from baseline to week 52. |
+| `helper_functions.R` | Contains utility functions including normalization functions (RangeNorm, GMPR), plotting functions for circos plots adapted for sgcca objects, data table formatting functions, and other helper functions for microbiome and metabolomics analysis. |
+| `make_box_plots.R` | Creates box plots for differentially abundant taxa comparing two groups using RPM-normalized counts. Processes taxonomic names, generates publication-ready plots, and identifies taxa with zero group means for further analysis. |
+| `metabolomics.R` | Analyzes metabolomics data using the MetaboDiff package. Performs quality control, imputation, normalization, differential testing, and visualization (PCA, t-SNE, volcano plots). Extracts results for specific metabolite comparisons. |
+| `metaphlan2phyloseq.R` | Converts MetaPhlAn output files to phyloseq objects for microbiome analysis in R. Handles taxonomic parsing, phylogenetic tree integration, and creates phyloseq objects compatible with standard microbiome analysis pipelines. |
+| `normalize_kraken_counts.py` | Normalizes kraken count data to counts per million (CPM). Reads TSV files with taxonomic counts and outputs normalized data files with CPM suffix. |
+| `parse_hmdb_xml.py` | Parses HMDB (Human Metabolome Database) XML files to extract metabolite information including name, accession, kingdom, super class, class, sub class, and molecular framework into TSV format. |
+| `parse_xml.py` | Utility script for exploring and visualizing the hierarchical structure of XML files. Recursively prints XML elements and their relationships to help understand file structure. |
+| `Utest_RR_RF_0-52.R` | Analyzes longitudinal microbiome data by computing differences between week 0 and week 52 samples, then performs Wilcoxon tests and calculates Cohen's d effect sizes comparing RR (remission-remission) and RF (remission-flare) groups. Filters taxa based on presence thresholds. |
+| `ZIBR_v2.R` | Implements Zero-Inflated Beta Regression (ZIBR) model to analyze longitudinal microbiome data with zero inflation. Accounts for patient-specific baseline effects and temporal patterns. Also includes linear mixed-effects model (LME) as an alternative approach. Performs multiple testing correction and exports results. |
+
