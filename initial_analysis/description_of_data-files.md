@@ -12,13 +12,17 @@ This document provides a comprehensive description of all files in the project d
 </thead>
 <tbody>
 <tr>
-<td rowspan="4">Root Directory</td>
+<td rowspan="8">Root Directory</td>
 <td>all_samples_metaph3-estCounts.tsv</td>
 <td>Metaphlan3 estimated counts for all samples</td>
 </tr>
 <tr>
 <td>all_samples_metaph3-estCounts_shortNames.tsv</td>
-<td>Metaphlan3 estimated counts with shortened names for all samples</td>
+<td>Metaphlan3 estimated counts for all samples</td>
+</tr>
+<tr>
+<td>flare-wk0_vs_remission-wk52_pAdj0.05.tsv</td>
+<td>Differential analysis results (adjusted p-value < 0.05)</td>
 </tr>
 <tr>
 <td>kraken2_all_samples_mpa_tax.tsv</td>
@@ -26,74 +30,65 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>kraken2_all_samples_mpa_tax_shortNames.tsv</td>
-<td>Kraken2 taxonomic classification with shortened names for all samples</td>
-</tr>
-<tr>
-<td rowspan="4">Root Directory</td>
-<td>metadata.tsv</td>
-<td>Metadata file containing sample information (sex, severity, diagnosis, timePoint, patient)</td>
+<td>Kraken2 taxonomic classification results for all samples in MPA format</td>
 </tr>
 <tr>
 <td>metabolic_profiling_rxn_estAbundance.tsv</td>
 <td>Metabolic profiling reaction estimated abundance data</td>
 </tr>
 <tr>
-<td>flare-wk0_vs_remission-wk52_pAdj0.05.tsv</td>
-<td>Differential analysis results comparing flare week 0 vs remission week 52 (adjusted p-value < 0.05)</td>
+<td>metadata.tsv</td>
+<td>Metadata file containing sample information</td>
 </tr>
 <tr>
 <td>remission-wk0_vs_flare-wk52_pAdj0.05.tsv</td>
-<td>Differential analysis results comparing remission week 0 vs flare week 52 (adjusted p-value < 0.05)</td>
+<td>Differential analysis results (adjusted p-value < 0.05)</td>
 </tr>
 <tr>
 <td rowspan="7">exploratory_plots</td>
 <td>HC_plot.pdf</td>
-<td>Hierarchical clustering plot in PDF format</td>
+<td>Hierarchical clustering heatmap PDF for RF counts</td>
 </tr>
 <tr>
 <td>PCA_plot.pdf</td>
-<td>Principal Component Analysis plot in PDF format</td>
+<td>PDF visualization</td>
 </tr>
 <tr>
 <td>PCoA_by_diagnosis.png</td>
-<td>Principal Coordinates Analysis plot colored by diagnosis</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
 <td>PCoA_by_severity.png</td>
-<td>Principal Coordinates Analysis plot colored by disease severity</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
 <td>PCoA_by_sex.png</td>
-<td>Principal Coordinates Analysis plot colored by sex</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
 <td>PCoA_by_timePoint.png</td>
-<td>Principal Coordinates Analysis plot colored by time point</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
 <td>PCoA_plot.pdf</td>
-<td>Principal Coordinates Analysis plot in PDF format</td>
+<td>Principal Coordinates Analysis plot PDF for RF counts</td>
 </tr>
 <tr>
-<td rowspan="60">0remission_52flare_analyses_230913</td>
+<td rowspan="40">0remission_52flare_analyses_230913</td>
+<td>Ttest_results_metabolomics_remission0-flare52.tsv</td>
+<td>Metabolomics data for weeks 0-52</td>
+</tr>
+<tr>
 <td>analysis_circusplot.Rmd</td>
-<td>R Markdown script for creating circus plots</td>
-</tr>
-<tr>
-<td>correlation_circosPlots.R</td>
-<td>R script for generating correlation circos plots</td>
+<td>Data file</td>
 </tr>
 <tr>
 <td>desc_columns_allData.tsv</td>
-<td>Description of columns in all data files</td>
-</tr>
-<tr>
-<td>DESeq2_microbiome.R</td>
-<td>R script for differential expression analysis using DESeq2 on microbiome data</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>diff_data.txt</td>
-<td>Differential analysis data in text format</td>
+<td>Differential analysis results table</td>
 </tr>
 <tr>
 <td>diff_table.txt</td>
@@ -101,15 +96,7 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>energy_and_consumption_0-52w.tsv</td>
-<td>Energy and consumption data for weeks 0-52</td>
-</tr>
-<tr>
-<td>extract_difference_52-0.py</td>
-<td>Python script to extract differences between week 52 and week 0</td>
-</tr>
-<tr>
-<td>helper_functions.R</td>
-<td>R script containing helper functions for data analysis</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>hmdb_metabolites.xml</td>
@@ -125,51 +112,47 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>meta.tsv</td>
-<td>Metadata file in TSV format</td>
-</tr>
-<tr>
-<td>metabolites_0remission_52flare_4metaboAnalyst.txt</td>
-<td>Metabolites data formatted for MetaboAnalyst (remission week 0 vs flare week 52)</td>
-</tr>
-<tr>
-<td>metabolites_0remission_52flare_annotation-b.txt</td>
-<td>Metabolite annotations (variant b) for remission week 0 vs flare week 52</td>
-</tr>
-<tr>
-<td>metabolites_0remission_52flare_annotation.txt</td>
-<td>Metabolite annotations for remission week 0 vs flare week 52</td>
-</tr>
-<tr>
-<td>metabolites_0remission_52flare-nonNorm.txt</td>
-<td>Non-normalized metabolites data for remission week 0 vs flare week 52</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>metabolites.txt</td>
-<td>Metabolites data in text format</td>
+<td>Text data file</td>
+</tr>
+<tr>
+<td>metabolites_0remission_52flare-nonNorm.txt</td>
+<td>Text data file</td>
+</tr>
+<tr>
+<td>metabolites_0remission_52flare_4metaboAnalyst.txt</td>
+<td>Text data file</td>
+</tr>
+<tr>
+<td>metabolites_0remission_52flare_annotation-b.txt</td>
+<td>Text data file</td>
+</tr>
+<tr>
+<td>metabolites_0remission_52flare_annotation.txt</td>
+<td>Text data file</td>
 </tr>
 <tr>
 <td>metabolomics_only_0-52w-b.tsv</td>
-<td>Metabolomics data for weeks 0-52 (variant b, transposed)</td>
+<td>Metabolomics data for weeks 0-52</td>
 </tr>
 <tr>
 <td>metabolomics_only_0-52w-t.tsv</td>
-<td>Metabolomics data for weeks 0-52 (transposed)</td>
+<td>Metabolomics data for weeks 0-52</td>
 </tr>
 <tr>
 <td>metabolomics_only_0-52w.tsv</td>
 <td>Metabolomics data for weeks 0-52</td>
 </tr>
 <tr>
-<td>metabolomics.R</td>
-<td>R script for metabolomics data analysis</td>
-</tr>
-<tr>
 <td>metadata_0-52w.tsv</td>
-<td>Metadata for weeks 0-52</td>
+<td>Metadata file containing sample information</td>
 </tr>
 <tr>
 <td>metadata_previous_0-52w.tsv</td>
-<td>Previous version of metadata for weeks 0-52</td>
+<td>Metadata file containing sample information</td>
 </tr>
 <tr>
 <td>metanb</td>
@@ -177,19 +160,7 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>multiOmics_data_0-52w.tsv</td>
-<td>Multi-omics integrated data for weeks 0-52</td>
-</tr>
-<tr>
-<td>normalize_kraken_counts.py</td>
-<td>Python script to normalize Kraken count data</td>
-</tr>
-<tr>
-<td>parse_hmdb_xml.py</td>
-<td>Python script to parse HMDB XML files</td>
-</tr>
-<tr>
-<td>parse_xml.py</td>
-<td>Python script for parsing XML files</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>pbmcsca_seurat_object.rds</td>
@@ -200,10 +171,6 @@ This document provides a comprehensive description of all files in the project d
 <td>Results from U-test (Mann-Whitney test) analysis</td>
 </tr>
 <tr>
-<td>rJava_1.0-11.tar.gz</td>
-<td>Compressed R package archive for rJava</td>
-</tr>
-<tr>
 <td>rowdata.txt</td>
 <td>Row data information</td>
 </tr>
@@ -212,93 +179,60 @@ This document provides a comprehensive description of all files in the project d
 <td>Sample information and disease progression data</td>
 </tr>
 <tr>
-<td>taxa_only_0-52w_100up_CPM.tsv</td>
-<td>Taxonomic data for weeks 0-52, filtered to taxa with 100+ counts, in CPM (counts per million) format</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_100up.tsv</td>
-<td>Taxonomic data for weeks 0-52, filtered to taxa with 100+ counts</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_RF_counts_allRes_normData.tsv</td>
-<td>All DESeq2 results with normalized data for RF (remission/flare) counts</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_RF_counts_HCheatmap.pdf</td>
-<td>Hierarchical clustering heatmap PDF for RF counts</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_RF_counts_p0.01_DE_features.tsv</td>
-<td>Differentially expressed features with p-value < 0.01 for RF counts</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_RF_counts_p0.05_DE_features.tsv</td>
-<td>Differentially expressed features with p-value < 0.05 for RF counts</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_RF_counts_p0.1_DE_features.tsv</td>
-<td>Differentially expressed features with p-value < 0.1 for RF counts</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_RF_counts_PCoA.pdf</td>
-<td>Principal Coordinates Analysis plot PDF for RF counts</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_RF_counts_sign_DESeq2_res.xlsx</td>
-<td>Significant DESeq2 results in Excel format for RF counts</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_RF_counts_volcanoPlot.pdf</td>
-<td>Volcano plot PDF for RF counts differential analysis</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_RF_counts.tsv</td>
-<td>Taxonomic count data for weeks 0-52 comparing remission and flare</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_RF_meta.tsv</td>
-<td>Metadata for RF (remission/flare) comparison</td>
-</tr>
-<tr>
 <td>taxa_only_0-52w-t.tsv</td>
-<td>Taxonomic data for weeks 0-52 (transposed)</td>
+<td>Taxonomic data for weeks 0-52</td>
 </tr>
 <tr>
 <td>taxa_only_0-52w.tsv</td>
 <td>Taxonomic data for weeks 0-52</td>
 </tr>
 <tr>
-<td>Ttest_results_metabolomics_remission0-flare52.tsv</td>
-<td>T-test results for metabolomics comparing remission week 0 vs flare week 52</td>
+<td>taxa_only_0-52w_100up.tsv</td>
+<td>Taxonomic data for weeks 0-52, filtered to taxa with 100+ counts</td>
 </tr>
 <tr>
-<td>Untitled.numbers</td>
-<td>Apple Numbers spreadsheet file (untitled)</td>
+<td>taxa_only_0-52w_100up_CPM.tsv</td>
+<td>Taxonomic data for weeks 0-52, filtered to taxa with 100+ counts</td>
 </tr>
 <tr>
-<td>Utest_RR_RF_0-52.R</td>
-<td>R script for U-test comparing RR (remission-remission) and RF (remission-flare) for weeks 0-52</td>
+<td>taxa_only_0-52w_RF_counts.tsv</td>
+<td>Taxonomic data for weeks 0-52</td>
 </tr>
 <tr>
-<td>xlsx_0.6.5.tar.gz</td>
-<td>Compressed R package archive for xlsx</td>
+<td>taxa_only_0-52w_RF_counts_HCheatmap.pdf</td>
+<td>Hierarchical clustering heatmap PDF for RF counts</td>
 </tr>
 <tr>
-<td rowspan="4">0remission_52flare_analyses_230913/ewandson_example</td>
-<td>analysis_circusplot.Rmd</td>
-<td>R Markdown script for creating circus plots (example from Ewandson)</td>
+<td>taxa_only_0-52w_RF_counts_PCoA.pdf</td>
+<td>Principal Coordinates Analysis plot PDF for RF counts</td>
 </tr>
 <tr>
-<td>helper_functions.R</td>
-<td>Helper functions R script (example from Ewandson)</td>
+<td>taxa_only_0-52w_RF_counts_allRes_normData.tsv</td>
+<td>Normalized taxonomic data</td>
 </tr>
 <tr>
-<td>SGCCA_HFHS.csv</td>
-<td>SGCCA (Sparse Generalized Canonical Correlation Analysis) results for HFHS dataset</td>
+<td>taxa_only_0-52w_RF_counts_p0.01_DE_features.tsv</td>
+<td>Taxonomic data for weeks 0-52</td>
 </tr>
 <tr>
-<td>SGCCA_SD.csv</td>
-<td>SGCCA results for SD dataset</td>
+<td>taxa_only_0-52w_RF_counts_p0.05_DE_features.tsv</td>
+<td>Taxonomic data for weeks 0-52</td>
+</tr>
+<tr>
+<td>taxa_only_0-52w_RF_counts_p0.1_DE_features.tsv</td>
+<td>Taxonomic data for weeks 0-52</td>
+</tr>
+<tr>
+<td>taxa_only_0-52w_RF_counts_sign_DESeq2_res.xlsx</td>
+<td>Excel spreadsheet file</td>
+</tr>
+<tr>
+<td>taxa_only_0-52w_RF_counts_volcanoPlot.pdf</td>
+<td>Volcano plot PDF for RF counts differential analysis</td>
+</tr>
+<tr>
+<td>taxa_only_0-52w_RF_meta.tsv</td>
+<td>Taxonomic data for weeks 0-52</td>
 </tr>
 <tr>
 <td rowspan="12">0remission_52flare_analyses_230913/MetaboAnalyst_plots</td>
@@ -306,8 +240,20 @@ This document provides a comprehensive description of all files in the project d
 <td>Boxplot visualization for Acetoacetate metabolite</td>
 </tr>
 <tr>
+<td>PCA_metaboAnalyist.png</td>
+<td>Image file in PNG format</td>
+</tr>
+<tr>
+<td>PCA_remission0_flare52.png</td>
+<td>Image file in PNG format</td>
+</tr>
+<tr>
+<td>SAM_MetaboAnalyst.png</td>
+<td>SAM (Significance Analysis of Microarrays) plot from MetaboAnalyst</td>
+</tr>
+<tr>
 <td>acetyl_methionine_boxplots.png</td>
-<td>Boxplot visualizations for acetyl methionine metabolites</td>
+<td>Boxplot visualization for Acetyl Methionine Boxplots metabolite</td>
 </tr>
 <tr>
 <td>correlationPlot_remission0-flare52.png</td>
@@ -315,7 +261,7 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>heatmap_OneFactor_MetaboAnalyst.png</td>
-<td>One-factor heatmap generated by MetaboAnalyst</td>
+<td>Heatmap visualization</td>
 </tr>
 <tr>
 <td>hippurate_boxplot.png</td>
@@ -323,52 +269,52 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>metabo_VP.png</td>
-<td>Volcano plot for metabolomics data</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
 <td>metabolites_heatmap_metaboAnalyst.png</td>
-<td>Heatmap of metabolites generated by MetaboAnalyst</td>
+<td>Heatmap visualization</td>
 </tr>
 <tr>
 <td>methionine_boxplot.png</td>
 <td>Boxplot visualization for Methionine metabolite</td>
 </tr>
 <tr>
-<td>PCA_metaboAnalyist.png</td>
-<td>Principal Component Analysis plot from MetaboAnalyst</td>
-</tr>
-<tr>
-<td>PCA_remission0_flare52.png</td>
-<td>PCA plot comparing remission week 0 and flare week 52</td>
-</tr>
-<tr>
-<td>SAM_MetaboAnalyst.png</td>
-<td>SAM (Significance Analysis of Microarrays) plot from MetaboAnalyst</td>
-</tr>
-<tr>
 <td>volcanoPlot_MetaboAnalyst.png</td>
-<td>Volcano plot generated by MetaboAnalyst</td>
+<td>Volcano plot</td>
 </tr>
 <tr>
-<td rowspan="64">0remission_52flare_analyses_230913/mixOmics</td>
+<td rowspan="48">0remission_52flare_analyses_230913/mixOmics</td>
 <td>1_1_1_1_cor_matrix_circos.csv</td>
 <td>Correlation matrix in CSV format for circos plot generation</td>
 </tr>
 <tr>
 <td>ACETOACETATE_Ttest_MetaboAnalyst.png</td>
-<td>T-test results visualization for Acetoacetate from MetaboAnalyst</td>
+<td>T-test results visualization from MetaboAnalyst</td>
+</tr>
+<tr>
+<td>HC_remission0_flare52.png</td>
+<td>Image file in PNG format</td>
+</tr>
+<tr>
+<td>PLS-DA_SRBCT.R</td>
+<td>Data file</td>
+</tr>
+<tr>
+<td>PURINE_Ttest_metaboAnalyst.png</td>
+<td>T-test results visualization from MetaboAnalyst</td>
 </tr>
 <tr>
 <td>analysis_circusplot.Rmd</td>
-<td>R Markdown script for creating circus plots in mixOmics analysis</td>
+<td>Data file</td>
 </tr>
 <tr>
 <td>correlation_circosPlots.R</td>
-<td>R script for generating correlation circos plots</td>
+<td>Data file</td>
 </tr>
 <tr>
 <td>correlation_matrix.tsv</td>
-<td>Correlation matrix in TSV format</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>data</td>
@@ -376,23 +322,19 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>edited_metabolites.tsv</td>
-<td>Edited metabolites data in TSV format</td>
+<td>Metabolites data in text format</td>
 </tr>
 <tr>
 <td>energy_and_consumption_0-52w-b.tsv</td>
-<td>Energy and consumption data for weeks 0-52 (variant b, transposed)</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>energy_and_consumption_0-52w.tsv</td>
-<td>Energy and consumption data for weeks 0-52</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>found_names</td>
-<td>File containing found metabolite names</td>
-</tr>
-<tr>
-<td>HC_remission0_flare52.png</td>
-<td>Hierarchical clustering plot for remission week 0 vs flare week 52</td>
+<td>File containing metabolite names</td>
 </tr>
 <tr>
 <td>header</td>
@@ -400,87 +342,83 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>helper_functions.R</td>
-<td>Helper functions R script for mixOmics analysis</td>
+<td>Data file</td>
 </tr>
 <tr>
 <td>ids.selCol.tsv</td>
-<td>Selected column IDs in TSV format</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>liverToxicity.R</td>
-<td>R script for liver toxicity analysis (example dataset)</td>
-</tr>
-<tr>
-<td>metabolites_0remission_52flare_4metaboAnalyst.txt</td>
-<td>Metabolites data formatted for MetaboAnalyst</td>
-</tr>
-<tr>
-<td>metabolites_0remission_52flare_annotation.txt</td>
-<td>Metabolite annotations for remission week 0 vs flare week 52</td>
-</tr>
-<tr>
-<td>metabolites_0remission_52flare-nonNorm.txt</td>
-<td>Non-normalized metabolites data</td>
-</tr>
-<tr>
-<td>metabolites_0remission_52flare.txt</td>
-<td>Metabolites data for remission week 0 vs flare week 52</td>
+<td>Data file</td>
 </tr>
 <tr>
 <td>metabolites.tsv</td>
-<td>Metabolites data in TSV format</td>
-</tr>
-<tr>
-<td>metabolites.txt</td>
 <td>Metabolites data in text format</td>
 </tr>
 <tr>
-<td>metabolomics_only_0-52w_norm_remission.tsv</td>
-<td>Normalized metabolomics data for weeks 0-52 (remission samples only)</td>
+<td>metabolites.txt</td>
+<td>Text data file</td>
 </tr>
 <tr>
-<td>metabolomics_only_0-52w_norm.tsv</td>
-<td>Normalized metabolomics data for weeks 0-52</td>
+<td>metabolites_0remission_52flare-nonNorm.txt</td>
+<td>Text data file</td>
+</tr>
+<tr>
+<td>metabolites_0remission_52flare.txt</td>
+<td>Text data file</td>
+</tr>
+<tr>
+<td>metabolites_0remission_52flare_4metaboAnalyst.txt</td>
+<td>Text data file</td>
+</tr>
+<tr>
+<td>metabolites_0remission_52flare_annotation.txt</td>
+<td>Text data file</td>
+</tr>
+<tr>
+<td>metabolomics.R</td>
+<td>Data file</td>
 </tr>
 <tr>
 <td>metabolomics_only_0-52w.tsv</td>
 <td>Metabolomics data for weeks 0-52</td>
 </tr>
 <tr>
-<td>metabolomics.R</td>
-<td>R script for metabolomics analysis</td>
+<td>metabolomics_only_0-52w_norm.tsv</td>
+<td>Metabolomics data for weeks 0-52</td>
+</tr>
+<tr>
+<td>metabolomics_only_0-52w_norm_remission.tsv</td>
+<td>Metabolomics data for weeks 0-52</td>
 </tr>
 <tr>
 <td>metadata_0-52w-b.tsv</td>
-<td>Metadata for weeks 0-52 (variant b, transposed)</td>
+<td>Metadata file containing sample information</td>
 </tr>
 <tr>
 <td>metadata_0-52w.tsv</td>
-<td>Metadata for weeks 0-52</td>
+<td>Metadata file containing sample information</td>
 </tr>
 <tr>
 <td>metadata_0remission_52flare.txt</td>
-<td>Metadata for remission week 0 vs flare week 52 comparison</td>
-</tr>
-<tr>
-<td>mixOmics_drugStudy.R</td>
-<td>R script for mixOmics analysis of drug study data</td>
-</tr>
-<tr>
-<td>mixOmics_lwIBD.R</td>
-<td>R script for mixOmics analysis of Living with IBD data</td>
+<td>Text data file</td>
 </tr>
 <tr>
 <td>mixOmics.R</td>
-<td>Main R script for mixOmics analysis</td>
+<td>Data file</td>
+</tr>
+<tr>
+<td>mixOmics_drugStudy.R</td>
+<td>Data file</td>
+</tr>
+<tr>
+<td>mixOmics_lwIBD.R</td>
+<td>Data file</td>
 </tr>
 <tr>
 <td>names</td>
 <td>File containing metabolite names</td>
-</tr>
-<tr>
-<td>parse_hmdb_xml_v2.pl</td>
-<td>Perl script version 2 for parsing HMDB XML files</td>
 </tr>
 <tr>
 <td>parse_hmdb_xml.pl</td>
@@ -488,15 +426,11 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>parse_hmdb_xml.py</td>
-<td>Python script for parsing HMDB XML files</td>
+<td>Python script to parse HMDB XML files</td>
 </tr>
 <tr>
-<td>PLS-DA_SRBCT.R</td>
-<td>R script for PLS-DA (Partial Least Squares Discriminant Analysis) on SRBCT dataset</td>
-</tr>
-<tr>
-<td>PURINE_Ttest_metaboAnalyst.png</td>
-<td>T-test results visualization for Purine from MetaboAnalyst</td>
+<td>parse_hmdb_xml_v2.pl</td>
+<td>Perl script for parsing HMDB XML files</td>
 </tr>
 <tr>
 <td>remission_samples.txt</td>
@@ -504,126 +438,70 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>results.tsv</td>
-<td>Analysis results in TSV format</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>scp_dayhoff.sh</td>
-<td>Shell script for SCP transfer to Dayhoff server</td>
+<td>Shell script for SCP transfer</td>
 </tr>
 <tr>
 <td>taxa_0remission_52flare.txt</td>
-<td>Taxonomic data for remission week 0 vs flare week 52</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_10000up_norm_remission.tsv</td>
-<td>Normalized taxonomic data filtered to taxa with 10000+ counts (remission samples only)</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_10000up_norm.tsv</td>
-<td>Normalized taxonomic data filtered to taxa with 10000+ counts</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_1000up_norm_remission.tsv</td>
-<td>Normalized taxonomic data filtered to taxa with 1000+ counts (remission samples only)</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_1000up_norm.tsv</td>
-<td>Normalized taxonomic data filtered to taxa with 1000+ counts</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_1000up.tsv</td>
-<td>Taxonomic data filtered to taxa with 1000+ counts</td>
-</tr>
-<tr>
-<td>taxa_only_0-52w_100up.tsv</td>
-<td>Taxonomic data filtered to taxa with 100+ counts</td>
+<td>Text data file</td>
 </tr>
 <tr>
 <td>taxa_only_0-52w.tsv</td>
 <td>Taxonomic data for weeks 0-52</td>
 </tr>
 <tr>
-<td>vim</td>
-<td>Vim editor backup or swap file</td>
+<td>taxa_only_0-52w_10000up_norm.tsv</td>
+<td>Taxonomic data filtered to taxa with 10000+ counts</td>
 </tr>
 <tr>
-<td rowspan="7">0remission_52flare_analyses_230913/mixOmics/ewandson_example</td>
-<td>analysis_circusplot.html</td>
-<td>HTML output from circus plot analysis</td>
+<td>taxa_only_0-52w_10000up_norm_remission.tsv</td>
+<td>Taxonomic data filtered to taxa with 10000+ counts</td>
 </tr>
 <tr>
-<td>analysis_circusplot.Rmd</td>
-<td>R Markdown script for creating circus plots (Ewandson example)</td>
+<td>taxa_only_0-52w_1000up.tsv</td>
+<td>Taxonomic data filtered to taxa with 1000+ counts</td>
 </tr>
 <tr>
-<td>helper_functions.R</td>
-<td>Helper functions R script (Ewandson example)</td>
+<td>taxa_only_0-52w_1000up_norm.tsv</td>
+<td>Taxonomic data filtered to taxa with 1000+ counts</td>
 </tr>
 <tr>
-<td>results/</td>
-<td>Directory containing analysis results</td>
+<td>taxa_only_0-52w_1000up_norm_remission.tsv</td>
+<td>Taxonomic data filtered to taxa with 1000+ counts</td>
 </tr>
 <tr>
-<td>results1_1_1_1_cor_matrix_circos.csv</td>
-<td>Correlation matrix results for circos plot</td>
+<td>taxa_only_0-52w_100up.tsv</td>
+<td>Taxonomic data for weeks 0-52, filtered to taxa with 100+ counts</td>
 </tr>
 <tr>
-<td>SGCCA_HFHS.csv</td>
-<td>SGCCA results for HFHS dataset (Ewandson example)</td>
-</tr>
-<tr>
-<td>SGCCA_SD.csv</td>
-<td>SGCCA results for SD dataset (Ewandson example)</td>
-</tr>
-<tr>
-<td rowspan="3">0remission_52flare_analyses_230913/mixOmics/manuscript/figures</td>
-<td>20240203_LwIBD_manuscript_figures.pptx</td>
-<td>PowerPoint presentation with manuscript figures from February 3, 2024</td>
-</tr>
-<tr>
-<td rowspan="1">0remission_52flare_analyses_230913/mixOmics/manuscript/figures/juan</td>
-<td>todo</td>
-<td>Todo list file</td>
-</tr>
-<tr>
-<td rowspan="3">0remission_52flare_analyses_230913/mixOmics/manuscript/figures/materials</td>
-<td>correlationHeatmap_metaboAbalyst_remission0-flare52_edited.png</td>
-<td>Edited correlation heatmap from MetaboAnalyst for remission week 0 vs flare week 52</td>
-</tr>
-<tr>
-<td>correlationHeatmap_metaboAbalyst_remission0-flare52.png</td>
-<td>Correlation heatmap from MetaboAnalyst for remission week 0 vs flare week 52</td>
-</tr>
-<tr>
-<td>names.psd</td>
-<td>Photoshop document with figure names/labels</td>
+<td rowspan="1">0remission_52flare_analyses_230913/results_heather_231003</td>
+<td>correlation_circos_remission0-flare52.png</td>
+<td>Correlation plot comparing remission week 0 and flare week 52</td>
 </tr>
 <tr>
 <td rowspan="4">0remission_52flare_analyses_230913/mixOmics/metaboAnalyst5.0</td>
-<td>cow_diet.csv</td>
-<td>Example dataset: cow diet data in CSV format</td>
-</tr>
-<tr>
-<td>human_cachexia.csv</td>
-<td>Example dataset: human cachexia data in CSV format</td>
-</tr>
-<tr>
 <td>TCE_feature_table.csv</td>
-<td>Example dataset: TCE feature table in CSV format</td>
+<td>CSV data file</td>
 </tr>
 <tr>
 <td>TCE_metadata.csv</td>
-<td>Example dataset: TCE metadata in CSV format</td>
+<td>CSV data file</td>
 </tr>
 <tr>
-<td rowspan="2">0remission_52flare_analyses_230913/results_heather_231003</td>
-<td>correlation_circos_remission0-flare52.png</td>
-<td>Correlation circos plot for remission week 0 vs flare week 52</td>
+<td>cow_diet.csv</td>
+<td>CSV data file</td>
 </tr>
 <tr>
-<td rowspan="10">0remission_52flare_analyses_230913/results_heather_231003/livingWithIBD_Maaslin2_0remission-52flare_230927</td>
+<td>human_cachexia.csv</td>
+<td>CSV data file</td>
+</tr>
+<tr>
+<td rowspan="6">0remission_52flare_analyses_230913/results_heather_231003/livingWithIBD_Maaslin2_0remission-52flare_230927</td>
 <td>all_results.tsv</td>
-<td>All Maaslin2 analysis results in TSV format</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>diagnosis.pdf</td>
@@ -635,7 +513,7 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>maaslin2.log</td>
-<td>Log file from Maaslin2 analysis</td>
+<td>Data file</td>
 </tr>
 <tr>
 <td>residuals.rds</td>
@@ -643,57 +521,16 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>significant_results.tsv</td>
-<td>Significant results from Maaslin2 analysis</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
-<td rowspan="10">0remission_52flare_analyses_230913/results_heather_231003/livingWithIBD_Maaslin2_0remission-52flare_230927/figures</td>
-<td>diagnosis_1.png</td>
-<td>Diagnosis visualization figure 1</td>
-</tr>
-<tr>
-<td>diagnosis_2.png</td>
-<td>Diagnosis visualization figure 2</td>
-</tr>
-<tr>
-<td>diagnosis_3.png</td>
-<td>Diagnosis visualization figure 3</td>
-</tr>
-<tr>
-<td>diagnosis_4.png</td>
-<td>Diagnosis visualization figure 4</td>
-</tr>
-<tr>
-<td>diagnosis_5.png</td>
-<td>Diagnosis visualization figure 5</td>
-</tr>
-<tr>
-<td>diagnosis_6.png</td>
-<td>Diagnosis visualization figure 6</td>
-</tr>
-<tr>
-<td>diagnosis_7.png</td>
-<td>Diagnosis visualization figure 7</td>
-</tr>
-<tr>
-<td>diagnosis_8.png</td>
-<td>Diagnosis visualization figure 8</td>
-</tr>
-<tr>
-<td>diagnosis_9.png</td>
-<td>Diagnosis visualization figure 9</td>
-</tr>
-<tr>
-<td>diagnosis_10.png</td>
-<td>Diagnosis visualization figure 10</td>
-</tr>
-<tr>
-<td rowspan="15">0remission_52flare_analyses_230913/results_heather_231003/livingWithIBD_Maaslin2_all0-all52_230927</td>
+<td rowspan="12">0remission_52flare_analyses_230913/results_heather_231003/livingWithIBD_Maaslin2_all0-all52_230927</td>
 <td>age_group.pdf</td>
 <td>PDF visualization of Maaslin2 results by age group</td>
 </tr>
 <tr>
 <td>all_results.tsv</td>
-<td>All Maaslin2 analysis results in TSV format</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>diagnosis.pdf</td>
@@ -709,11 +546,11 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>heatmap.pdf</td>
-<td>Heatmap visualization in PDF format</td>
+<td>PDF visualization</td>
 </tr>
 <tr>
 <td>maaslin2.log</td>
-<td>Log file from Maaslin2 analysis</td>
+<td>Data file</td>
 </tr>
 <tr>
 <td>residuals.rds</td>
@@ -725,7 +562,7 @@ This document provides a comprehensive description of all files in the project d
 </tr>
 <tr>
 <td>significant_results.tsv</td>
-<td>Significant results from Maaslin2 analysis</td>
+<td>Data file in TSV format</td>
 </tr>
 <tr>
 <td>time_severity.pdf</td>
@@ -736,49 +573,75 @@ This document provides a comprehensive description of all files in the project d
 <td>PDF visualization of Maaslin2 results by week</td>
 </tr>
 <tr>
-<td rowspan="61">0remission_52flare_analyses_230913/results_heather_231003/livingWithIBD_Maaslin2_all0-all52_230927/figures</td>
-<td>age_group_1.png</td>
-<td>Age group visualization figure 1</td>
+<td rowspan="14">0remission_52flare_analyses_230913/results_heather_231003/metaboAnalyst_remission0-flare52</td>
+<td>ACETOACETATE_metaboAnalyst_remission0-flare52.png</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
-<td>age_group_2.png</td>
-<td>Age group visualization figure 2</td>
+<td>CARNOSINE_metaboAnalyst_remission0-flare52.png</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
-<td>age_group_3.png</td>
-<td>Age group visualization figure 3</td>
+<td>CATECHOL_metaboAnalyst_remission0-flare52.png</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
-<td>age_group_4.png</td>
-<td>Age group visualization figure 4</td>
+<td>LInearModel_MetaboAnalyst.png</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
-<td>age_group_5.png</td>
-<td>Age group visualization figure 5</td>
+<td>N_ACETYL_LEUCINE_metaboAnalyst_remission0-flare52.png</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
-<td>age_group_6.png</td>
-<td>Age group visualization figure 6</td>
+<td>PLSDA_metaboAnalyst.png</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
-<td>age_group_7.png</td>
-<td>Age group visualization figure 7</td>
+<td>PURINE_metaboAnalyst_remission0-flare52.png</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
-<td>age_group_8.png</td>
-<td>Age group visualization figure 8</td>
+<td>VP_metaboAnalyst_remission0-flare52.png</td>
+<td>Image file in PNG format</td>
 </tr>
 <tr>
-<td>age_group_9.png</td>
-<td>Age group visualization figure 9</td>
+<td>correlationHeatmap_metaboAbalyst_remission0-flare52.png</td>
+<td>Heatmap visualization</td>
 </tr>
 <tr>
-<td>age_group_10.png</td>
-<td>Age group visualization figure 10</td>
+<td>correlation_table_metaboAnalyst_remission0-flare52.xlsx</td>
+<td>Excel spreadsheet file</td>
 </tr>
 <tr>
+<td>covariate_result_metaboAnalyst.xlsx</td>
+<td>Excel spreadsheet file</td>
+</tr>
+<tr>
+<td>ortho_PLSDA_metaboanalyst.png</td>
+<td>Image file in PNG format</td>
+</tr>
+<tr>
+<td>pval_correlation_table_metaboAnalyst_remission0-flare52.tsv</td>
+<td>Data file in TSV format</td>
+</tr>
+<tr>
+<td>top25_metabolites_correlation.png</td>
+<td>Correlation plot</td>
+</tr>
+<tr>
+<td rowspan="1">0remission_52flare_analyses_230913/mixOmics/manuscript/figures</td>
+<td>20240203_LwIBD_manuscript_figures.pptx</td>
+<td>PowerPoint presentation with manuscript figures</td>
+</tr>
+<tr>
+<td rowspan="10">0remission_52flare_analyses_230913/results_heather_231003/livingWithIBD_Maaslin2_0remission-52flare_230927/figures</td>
 <td>diagnosis_1.png</td>
 <td>Diagnosis visualization figure 1</td>
+</tr>
+<tr>
+<td>diagnosis_10.png</td>
+<td>Diagnosis visualization figure 10</td>
 </tr>
 <tr>
 <td>diagnosis_2.png</td>
@@ -813,136 +676,217 @@ This document provides a comprehensive description of all files in the project d
 <td>Diagnosis visualization figure 9</td>
 </tr>
 <tr>
+<td rowspan="61">0remission_52flare_analyses_230913/results_heather_231003/livingWithIBD_Maaslin2_all0-all52_230927/figures</td>
+<td>age_group_1.png</td>
+<td>Age Group visualization figure 1</td>
+</tr>
+<tr>
+<td>age_group_10.png</td>
+<td>Age Group visualization figure 10</td>
+</tr>
+<tr>
+<td>age_group_2.png</td>
+<td>Age Group visualization figure 2</td>
+</tr>
+<tr>
+<td>age_group_3.png</td>
+<td>Age Group visualization figure 3</td>
+</tr>
+<tr>
+<td>age_group_4.png</td>
+<td>Age Group visualization figure 4</td>
+</tr>
+<tr>
+<td>age_group_5.png</td>
+<td>Age Group visualization figure 5</td>
+</tr>
+<tr>
+<td>age_group_6.png</td>
+<td>Age Group visualization figure 6</td>
+</tr>
+<tr>
+<td>age_group_7.png</td>
+<td>Age Group visualization figure 7</td>
+</tr>
+<tr>
+<td>age_group_8.png</td>
+<td>Age Group visualization figure 8</td>
+</tr>
+<tr>
+<td>age_group_9.png</td>
+<td>Age Group visualization figure 9</td>
+</tr>
+<tr>
+<td>diagnosis_1.png</td>
+<td>Diagnosis visualization figure 1</td>
+</tr>
+<tr>
 <td>diagnosis_10.png</td>
 <td>Diagnosis visualization figure 10</td>
 </tr>
 <tr>
+<td>diagnosis_2.png</td>
+<td>Diagnosis visualization figure 2</td>
+</tr>
+<tr>
+<td>diagnosis_3.png</td>
+<td>Diagnosis visualization figure 3</td>
+</tr>
+<tr>
+<td>diagnosis_4.png</td>
+<td>Diagnosis visualization figure 4</td>
+</tr>
+<tr>
+<td>diagnosis_5.png</td>
+<td>Diagnosis visualization figure 5</td>
+</tr>
+<tr>
+<td>diagnosis_6.png</td>
+<td>Diagnosis visualization figure 6</td>
+</tr>
+<tr>
+<td>diagnosis_7.png</td>
+<td>Diagnosis visualization figure 7</td>
+</tr>
+<tr>
+<td>diagnosis_8.png</td>
+<td>Diagnosis visualization figure 8</td>
+</tr>
+<tr>
+<td>diagnosis_9.png</td>
+<td>Diagnosis visualization figure 9</td>
+</tr>
+<tr>
 <td>disease_severity_1.png</td>
-<td>Disease severity visualization figure 1</td>
-</tr>
-<tr>
-<td>disease_severity_2.png</td>
-<td>Disease severity visualization figure 2</td>
-</tr>
-<tr>
-<td>disease_severity_3.png</td>
-<td>Disease severity visualization figure 3</td>
-</tr>
-<tr>
-<td>disease_severity_4.png</td>
-<td>Disease severity visualization figure 4</td>
-</tr>
-<tr>
-<td>disease_severity_5.png</td>
-<td>Disease severity visualization figure 5</td>
-</tr>
-<tr>
-<td>disease_severity_6.png</td>
-<td>Disease severity visualization figure 6</td>
-</tr>
-<tr>
-<td>disease_severity_7.png</td>
-<td>Disease severity visualization figure 7</td>
-</tr>
-<tr>
-<td>disease_severity_8.png</td>
-<td>Disease severity visualization figure 8</td>
-</tr>
-<tr>
-<td>disease_severity_9.png</td>
-<td>Disease severity visualization figure 9</td>
+<td>Disease Severity visualization figure 1</td>
 </tr>
 <tr>
 <td>disease_severity_10.png</td>
-<td>Disease severity visualization figure 10</td>
+<td>Disease Severity visualization figure 10</td>
+</tr>
+<tr>
+<td>disease_severity_2.png</td>
+<td>Disease Severity visualization figure 2</td>
+</tr>
+<tr>
+<td>disease_severity_3.png</td>
+<td>Disease Severity visualization figure 3</td>
+</tr>
+<tr>
+<td>disease_severity_4.png</td>
+<td>Disease Severity visualization figure 4</td>
+</tr>
+<tr>
+<td>disease_severity_5.png</td>
+<td>Disease Severity visualization figure 5</td>
+</tr>
+<tr>
+<td>disease_severity_6.png</td>
+<td>Disease Severity visualization figure 6</td>
+</tr>
+<tr>
+<td>disease_severity_7.png</td>
+<td>Disease Severity visualization figure 7</td>
+</tr>
+<tr>
+<td>disease_severity_8.png</td>
+<td>Disease Severity visualization figure 8</td>
+</tr>
+<tr>
+<td>disease_severity_9.png</td>
+<td>Disease Severity visualization figure 9</td>
 </tr>
 <tr>
 <td>heatmap.png</td>
-<td>Heatmap visualization in PNG format</td>
+<td>Heatmap visualization</td>
 </tr>
 <tr>
 <td>sex_f_1.png</td>
-<td>Sex (female) visualization figure 1</td>
-</tr>
-<tr>
-<td>sex_f_2.png</td>
-<td>Sex (female) visualization figure 2</td>
-</tr>
-<tr>
-<td>sex_f_3.png</td>
-<td>Sex (female) visualization figure 3</td>
-</tr>
-<tr>
-<td>sex_f_4.png</td>
-<td>Sex (female) visualization figure 4</td>
-</tr>
-<tr>
-<td>sex_f_5.png</td>
-<td>Sex (female) visualization figure 5</td>
-</tr>
-<tr>
-<td>sex_f_6.png</td>
-<td>Sex (female) visualization figure 6</td>
-</tr>
-<tr>
-<td>sex_f_7.png</td>
-<td>Sex (female) visualization figure 7</td>
-</tr>
-<tr>
-<td>sex_f_8.png</td>
-<td>Sex (female) visualization figure 8</td>
-</tr>
-<tr>
-<td>sex_f_9.png</td>
-<td>Sex (female) visualization figure 9</td>
+<td>Sex F visualization figure 1</td>
 </tr>
 <tr>
 <td>sex_f_10.png</td>
-<td>Sex (female) visualization figure 10</td>
+<td>Sex F visualization figure 10</td>
+</tr>
+<tr>
+<td>sex_f_2.png</td>
+<td>Sex F visualization figure 2</td>
+</tr>
+<tr>
+<td>sex_f_3.png</td>
+<td>Sex F visualization figure 3</td>
+</tr>
+<tr>
+<td>sex_f_4.png</td>
+<td>Sex F visualization figure 4</td>
+</tr>
+<tr>
+<td>sex_f_5.png</td>
+<td>Sex F visualization figure 5</td>
+</tr>
+<tr>
+<td>sex_f_6.png</td>
+<td>Sex F visualization figure 6</td>
+</tr>
+<tr>
+<td>sex_f_7.png</td>
+<td>Sex F visualization figure 7</td>
+</tr>
+<tr>
+<td>sex_f_8.png</td>
+<td>Sex F visualization figure 8</td>
+</tr>
+<tr>
+<td>sex_f_9.png</td>
+<td>Sex F visualization figure 9</td>
 </tr>
 <tr>
 <td>time_severity_1.png</td>
-<td>Time and severity visualization figure 1</td>
-</tr>
-<tr>
-<td>time_severity_2.png</td>
-<td>Time and severity visualization figure 2</td>
-</tr>
-<tr>
-<td>time_severity_3.png</td>
-<td>Time and severity visualization figure 3</td>
-</tr>
-<tr>
-<td>time_severity_4.png</td>
-<td>Time and severity visualization figure 4</td>
-</tr>
-<tr>
-<td>time_severity_5.png</td>
-<td>Time and severity visualization figure 5</td>
-</tr>
-<tr>
-<td>time_severity_6.png</td>
-<td>Time and severity visualization figure 6</td>
-</tr>
-<tr>
-<td>time_severity_7.png</td>
-<td>Time and severity visualization figure 7</td>
-</tr>
-<tr>
-<td>time_severity_8.png</td>
-<td>Time and severity visualization figure 8</td>
-</tr>
-<tr>
-<td>time_severity_9.png</td>
-<td>Time and severity visualization figure 9</td>
+<td>Time Severity visualization figure 1</td>
 </tr>
 <tr>
 <td>time_severity_10.png</td>
-<td>Time and severity visualization figure 10</td>
+<td>Time Severity visualization figure 10</td>
+</tr>
+<tr>
+<td>time_severity_2.png</td>
+<td>Time Severity visualization figure 2</td>
+</tr>
+<tr>
+<td>time_severity_3.png</td>
+<td>Time Severity visualization figure 3</td>
+</tr>
+<tr>
+<td>time_severity_4.png</td>
+<td>Time Severity visualization figure 4</td>
+</tr>
+<tr>
+<td>time_severity_5.png</td>
+<td>Time Severity visualization figure 5</td>
+</tr>
+<tr>
+<td>time_severity_6.png</td>
+<td>Time Severity visualization figure 6</td>
+</tr>
+<tr>
+<td>time_severity_7.png</td>
+<td>Time Severity visualization figure 7</td>
+</tr>
+<tr>
+<td>time_severity_8.png</td>
+<td>Time Severity visualization figure 8</td>
+</tr>
+<tr>
+<td>time_severity_9.png</td>
+<td>Time Severity visualization figure 9</td>
 </tr>
 <tr>
 <td>week_1.png</td>
 <td>Week visualization figure 1</td>
+</tr>
+<tr>
+<td>week_10.png</td>
+<td>Week visualization figure 10</td>
 </tr>
 <tr>
 <td>week_2.png</td>
@@ -977,66 +921,22 @@ This document provides a comprehensive description of all files in the project d
 <td>Week visualization figure 9</td>
 </tr>
 <tr>
-<td>week_10.png</td>
-<td>Week visualization figure 10</td>
+<td rowspan="1">0remission_52flare_analyses_230913/mixOmics/manuscript/figures/juan</td>
+<td>todo</td>
+<td>Data file</td>
 </tr>
 <tr>
-<td rowspan="14">0remission_52flare_analyses_230913/results_heather_231003/metaboAnalyst_remission0-flare52</td>
-<td>ACETOACETATE_metaboAnalyst_remission0-flare52.png</td>
-<td>Acetoacetate metabolite visualization from MetaboAnalyst</td>
-</tr>
-<tr>
-<td>CARNOSINE_metaboAnalyst_remission0-flare52.png</td>
-<td>Carnosine metabolite visualization from MetaboAnalyst</td>
-</tr>
-<tr>
-<td>CATECHOL_metaboAnalyst_remission0-flare52.png</td>
-<td>Catechol metabolite visualization from MetaboAnalyst</td>
-</tr>
-<tr>
-<td>correlation_table_metaboAnalyst_remission0-flare52.xlsx</td>
-<td>Correlation table in Excel format from MetaboAnalyst</td>
-</tr>
-<tr>
+<td rowspan="3">0remission_52flare_analyses_230913/mixOmics/manuscript/figures/materials</td>
 <td>correlationHeatmap_metaboAbalyst_remission0-flare52.png</td>
-<td>Correlation heatmap from MetaboAnalyst for remission week 0 vs flare week 52</td>
+<td>Heatmap visualization</td>
 </tr>
 <tr>
-<td>covariate_result_metaboAnalyst.xlsx</td>
-<td>Covariate analysis results in Excel format from MetaboAnalyst</td>
+<td>correlationHeatmap_metaboAbalyst_remission0-flare52_edited.png</td>
+<td>Heatmap visualization</td>
 </tr>
 <tr>
-<td>LInearModel_MetaboAnalyst.png</td>
-<td>Linear model visualization from MetaboAnalyst</td>
-</tr>
-<tr>
-<td>N_ACETYL_LEUCINE_metaboAnalyst_remission0-flare52.png</td>
-<td>N-Acetyl Leucine metabolite visualization from MetaboAnalyst</td>
-</tr>
-<tr>
-<td>ortho_PLSDA_metaboanalyst.png</td>
-<td>Orthogonal PLS-DA plot from MetaboAnalyst</td>
-</tr>
-<tr>
-<td>PLSDA_metaboAnalyst.png</td>
-<td>PLS-DA (Partial Least Squares Discriminant Analysis) plot from MetaboAnalyst</td>
-</tr>
-<tr>
-<td>PURINE_metaboAnalyst_remission0-flare52.png</td>
-<td>Purine metabolite visualization from MetaboAnalyst</td>
-</tr>
-<tr>
-<td>pval_correlation_table_metaboAnalyst_remission0-flare52.tsv</td>
-<td>P-value correlation table in TSV format from MetaboAnalyst</td>
-</tr>
-<tr>
-<td>top25_metabolites_correlation.png</td>
-<td>Top 25 metabolites correlation visualization</td>
-</tr>
-<tr>
-<td>VP_metaboAnalyst_remission0-flare52.png</td>
-<td>Volcano plot from MetaboAnalyst for remission week 0 vs flare week 52</td>
+<td>names.psd</td>
+<td>Photoshop document with figure names/labels</td>
 </tr>
 </tbody>
 </table>
-
