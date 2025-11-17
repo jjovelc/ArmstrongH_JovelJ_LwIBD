@@ -67,6 +67,6 @@ flare-associated functional shifts
 baseline predictors of future disease state
 sex- or diagnosis-dependent trajectories
 
-Please click on the following ling to see a descriptive list of files included in this [repo](initial_analysis/description_of_files.md)
+Please click on the following ling to see a descriptive list of files included in this [repo](initial_analysis/description_of_data-files.md)
 
 
