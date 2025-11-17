@@ -37,4 +37,36 @@ Participants were sampled at:
 
 Not all participants have samples at all three time points. Many have paired baseline–wk52 samples, while a subset includes the intermediate wk26 collection.
 
+## Sample Naming Scheme
+
+Two naming patterns occur:
+
+X###_Baseline / X###_WK52
+e.g., X101_Baseline, X101_WK52
+The prepending "X" was added because R does not like variables that strts with a number. It will preprend the "X" anyways.
+
+W26_P### (wk26 samples)
+e.g., W26_P101 for week-26 sample from patient P101
+
+Every row in the metadata table corresponds to a single stool sample with complete clinical annotations.
+
+## Longitudinal Clinical Dynamics
+
+The dataset captures transitions in disease activity over time, such as:
+
+flare → remission
+remission → flare
+persistent remission
+persistent flare
+
+This enables modeling of:
+
+intra-patient microbiome changes
+disease-specific microbial signatures
+flare-associated functional shifts
+baseline predictors of future disease state
+sex- or diagnosis-dependent trajectories
+
+Please click on the following ling to see a descriptive list of files included in this [repo](initial_analysis/description_of_files.md)
+
 
